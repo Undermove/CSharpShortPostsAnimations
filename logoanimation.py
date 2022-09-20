@@ -25,11 +25,15 @@ class Testing(Scene):
         self.play(Transform(s2, line3), run_time=speed)
         
         s3 = AnnularSector(inner_radius=1.5, outer_radius=2, angle=270 * DEGREES, color=c_color).rotate(45 * DEGREES)
-        self.play(Create(s3), run_time=1)
+        self.play(Create(s3), run_time=speed)
         
         s2.add(line1)
         
         self.play(s2.animate.scale(0.5), run_time=speed)
         self.play(s2.animate.shift(RIGHT), run_time=speed),
         
+        s4 = s2.add(s3).copy()
+    
+        bool_ops_text = MarkupText("<span size=\"x-large\">Short Posts (18+)</span>").next_to(s2, DOWN * 3, aligned_edge=ORIGIN)
+        self.play(Transform(s4, bool_ops_text), run_time=speed)
         self.wait(1)
