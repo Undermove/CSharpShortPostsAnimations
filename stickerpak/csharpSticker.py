@@ -6,7 +6,7 @@ class CsharpSticker(Scene):
         c_color = '#F78D3F'
         sharp_color = '#ffffff'
 
-        text = MarkupText("<span size=\"x-large\">Це</span>")
+        text = MarkupText("<span size=\"x-large\">Цэ</span>")
         self.play(Create(text), run_time=speed)
         self.wait(1)
 
