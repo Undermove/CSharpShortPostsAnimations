@@ -3,8 +3,8 @@ from manim import *
 class Plusuyu(Scene):
     def construct(self):
         speed = 0.3
-        c_color = '#FF813F'
-        sharp_color = '#ffffff'
+        c_color = '#FF81FF'
+        sharp_color = '#f000ff'
 
         line1 = Line((-1,0,0),(1,0,0), stroke_width = 20, color = sharp_color)
         line2 = Line((0,-1,0),(0,1,0), stroke_width = 20, color = sharp_color)

@@ -3,7 +3,7 @@ from manim import *
 class TochkaNet(Scene):
     def construct(self):
         speed = 0.3
-        c_color = '#FF813F'
+        c_color = '#FF003F'
 
         text = MarkupText("<span size=\"x-large\">НЭТ!</span>")
         self.play(Create(text), run_time=speed)
