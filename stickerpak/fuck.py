@@ -12,8 +12,8 @@ class Fuck(Scene):
         line2 = Line((-1,0.1,0),(0.5,0.1,0), stroke_width = 20, color = f_color)
         line3 = Line((-1,-1,0),(-1,1,0), stroke_width = 20, color = f_color)
         line1.add(line2).add(line3)
+        line1.scale(2)
         self.play(Create(line1), run_time=speed)
-        self.play(line1.animate.scale(2), run_time=speed)
 
         line4 = Line((-2,1,0),(2,1,0), stroke_width = 20, color = sharp_color)
         line5 = Line((1,-2,0),(1,2,0), stroke_width = 20, color = sharp_color)
