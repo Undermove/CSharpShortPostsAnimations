@@ -22,13 +22,14 @@ class LyutoPlusuyu(Scene):
         
         line4.add(line1)
         self.play(line4.animate.scale(0.5), run_time=speed)
-        self.play(line4.animate.shift(UP), run_time=speed)
+        self.play(line4.animate.shift(UP*1.1), run_time=speed)
 
         s = AnnularSector(inner_radius=1.5, outer_radius=2, angle=270 * DEGREES, color=c_color).rotate(45 * DEGREES)
         s.generate_target()
-        self.play(Create(s), run_time=speed)
         s.target.move_to(1.5*LEFT)
-        self.play(MoveToTarget(s), run_time=speed)
+        # self.play(Create(s), run_time=speed)
+
+        self.play(Create(s), MoveToTarget(s), run_time=speed)
     
         text2 = MarkupText("<span style=\"italic\" size=\"large\">ЛЮТО ПЛЮСУЮ!</span>")
         self.play(Create(text2.next_to(line4, direction=5*DOWN)), run_time=speed)
