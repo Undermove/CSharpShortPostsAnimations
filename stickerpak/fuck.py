@@ -2,7 +2,8 @@ from manim import *
 
 class Fuck(Scene):
     def construct(self):
-        speed = 0.2
+        self.camera.background_color = "#FFFFFF00"
+        speed = 0.1
         f_color = '#FF0000'
         sharp_color = '#00FF00'
         c_color = '#0000FF'
