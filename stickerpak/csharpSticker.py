@@ -14,7 +14,7 @@ class CsharpSticker(Scene):
         s2 = AnnularSector(inner_radius=1.5, outer_radius=2, angle=270 * DEGREES, color=c_color).rotate(45 * DEGREES)
         self.play(Transform(text, s2), run_time=speed)
 
-        text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"x-large\">РЕШЁТКА!</span>')
+        text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"large\">РЕШЁТКА!</span>')
         self.play(Create(text2), run_time=speed)
         self.wait(1)
 
