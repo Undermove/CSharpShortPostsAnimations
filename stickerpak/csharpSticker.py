@@ -5,16 +5,16 @@ class CsharpSticker(Scene):
         self.camera.background_color = "#FFFFFF00"
         speed = 0.3
         c_color = '#F78D3F'
-        sharp_color = '#ffffff'
+        sharp_color = '#500000'
 
-        text = MarkupText("<span size=\"x-large\">Цэ</span>")
+        text = MarkupText(f'<span color=\"{sharp_color}\" size=\"x-large\">Цэ</span>')
         self.play(Create(text), run_time=speed)
         self.wait(1)
 
         s2 = AnnularSector(inner_radius=1.5, outer_radius=2, angle=270 * DEGREES, color=c_color).rotate(45 * DEGREES)
         self.play(Transform(text, s2), run_time=speed)
 
-        text2 = MarkupText("<span style=\"italic\" size=\"x-large\">РЕШЁТКА!</span>")
+        text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"x-large\">РЕШЁТКА!</span>')
         self.play(Create(text2), run_time=speed)
         self.wait(1)
 
