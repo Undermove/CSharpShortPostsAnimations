@@ -7,16 +7,16 @@ class Decrement(Scene):
         c_color = '#BBFF33'
         sharp_color = '#00FF00'
 
-        text = MarkupText("<span color=\"#BBFF33\" size=\"xx-large\">ЦЭ</span>")
+        text = MarkupText("<span color=\"#BBFF33\" size=\"xx-large\">ЦЕ</span>")
         self.play(Create(text.shift(LEFT)), run_time=speed)
-        self.wait(0.5)
-
-        decreText = MarkupText("<span color=\"#00FF00\">ДЕКРЕ</span>")
-        self.play(Create(decreText.shift(1*RIGHT)), run_time=speed)
         self.wait(0.5)
 
         mentText = MarkupText("<span color=\"#00FF00\">МЕНТ</span>")
         self.play(Create(mentText.shift(3.1*RIGHT).shift(0.06*UP)), run_time=speed)
+        self.wait(0.5)
+
+        decreText = MarkupText("<span color=\"#00FF00\">ДЕКРЕ</span>")
+        self.play(Create(decreText.shift(1*RIGHT)), run_time=speed)
         self.wait(0.5)
 
         c = AnnularSector(inner_radius=1.5, outer_radius=2, angle=270 * DEGREES, color=c_color).rotate(45 * DEGREES)
