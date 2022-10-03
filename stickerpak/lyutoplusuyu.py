@@ -2,6 +2,7 @@ from manim import *
 
 class LyutoPlusuyu(Scene):
     def construct(self):
+        self.camera.background_color = "#FFFFFF00"
         speed = 0.3
         c_color = '#BBFF33'
         sharp_color = '#00FF00'

@@ -2,6 +2,7 @@ from manim import *
 
 class TochkaNet(Scene):
     def construct(self):
+        self.camera.background_color = "#FFFFFF00"
         speed = 0.3
         c_color = '#FF003F'
 

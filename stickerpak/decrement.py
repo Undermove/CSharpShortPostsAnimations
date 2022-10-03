@@ -4,18 +4,18 @@ class Decrement(Scene):
     def construct(self):
         self.camera.background_color = "#FFFFFF00"
         speed = 0.3
-        c_color = '#BBFF33'
-        sharp_color = '#00FF00'
+        c_color = '#0044FF'
+        sharp_color = '#000000'
 
-        text = MarkupText("<span color=\"#BBFF33\" size=\"xx-large\">ЦЕ</span>")
+        text = MarkupText(f'<span color=\"{c_color}\" size=\"xx-large\">ЦЕ</span>')
         self.play(Create(text.shift(LEFT)), run_time=speed)
         self.wait(0.5)
 
-        mentText = MarkupText("<span color=\"#00FF00\">МЕНТ</span>")
+        mentText = MarkupText(f'<span color=\"{sharp_color}\">МЕНТ</span>')
         self.play(Create(mentText.shift(3.1*RIGHT).shift(0.06*UP)), run_time=speed)
         self.wait(0.5)
 
-        decreText = MarkupText("<span color=\"#00FF00\">ДЕКРЕ</span>")
+        decreText = MarkupText(f'<span color=\"{sharp_color}\">ДЕКРЕ</span>')
         self.play(Create(decreText.shift(1*RIGHT)), run_time=speed)
         self.wait(0.5)
 
