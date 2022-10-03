@@ -25,6 +25,6 @@ class Plusuyu(Scene):
         s.target.move_to(1.5*LEFT)
         self.play(MoveToTarget(s), run_time=speed)
     
-        text2 = MarkupText("<span style=\"italic\" size=\"x-large\">ПЛЮСУЮ!</span>")
+        text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"x-large\">ПЛЮСУЮ!</span>')
         self.play(Create(text2.next_to(line3, direction=5*DOWN)), run_time=speed)
         self.wait(1)

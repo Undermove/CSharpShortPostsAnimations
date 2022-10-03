@@ -4,9 +4,10 @@ class TochkaNet(Scene):
     def construct(self):
         self.camera.background_color = "#FFFFFF00"
         speed = 0.3
-        c_color = '#FF003F'
+        c_color = '#008500'
+        text_color = '#FF7800'
 
-        text = MarkupText("<span size=\"x-large\">НЭТ!</span>")
+        text = MarkupText(f'<span color=\"{text_color}\" size=\"x-large\">НЭТ!</span>')
         self.play(Create(text), run_time=speed)
         self.wait(1)
 
@@ -22,10 +23,10 @@ class TochkaNet(Scene):
         self.play(Create(circle2.next_to(circle, direction=DOWN*1)), run_time=speed)
         self.wait(1)
 
-        text2 = MarkupText("<span style=\"italic\" size=\"x-large\">И ТОЧКА!</span>")
+        text2 = MarkupText(f'<span color=\"{text_color}\" style=\"italic\" size=\"x-large\">И ТОЧКА!</span>')
         self.play(Transform(circle2, text2), run_time=speed)
         self.wait(1)
 
-        text3 = MarkupText("<span style=\"italic\" size=\"x-large\">.NET</span>")
+        text3 = MarkupText(f'<span color=\"{text_color}\" style=\"italic\" size=\"x-large\">.NET</span>')
         self.play(Transform(circle2, text3), run_time=speed)
         self.wait(1)

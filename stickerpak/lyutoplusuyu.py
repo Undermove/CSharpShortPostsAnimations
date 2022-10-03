@@ -32,6 +32,6 @@ class LyutoPlusuyu(Scene):
 
         self.play(Create(s), MoveToTarget(s), run_time=speed)
     
-        text2 = MarkupText("<span style=\"italic\" size=\"large\">ЛЮТО ПЛЮСУЮ!</span>")
+        text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"large\">ЛЮТО ПЛЮСУЮ!</span>')
         self.play(Create(text2.next_to(line4, direction=5*DOWN)), run_time=speed)
         self.wait(1)
