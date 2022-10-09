@@ -6,7 +6,6 @@ class Soryan(Scene):
         speed = 0.3
         red_color = '#FF0000'
         orange_color = '#F78D3F'
-        yellow_color = '#F7FF3F'
         green_color = '#00FF3F'
         blue_color = '#0055FF'
         deepblue_color = '#0000FF'
