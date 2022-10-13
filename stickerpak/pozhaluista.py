@@ -6,11 +6,10 @@ class Pozhaluista(Scene):
         speed = 0.3
         blue_color = '#0055FF'
         orange_color = '#F78D3F'
-        orange2_color = '#F7AF3F'
 
         point1 = Circle(radius=1, color=blue_color, fill_opacity=1)
         point2 = Circle(radius=1, color=orange_color, fill_opacity=1)
-        point3 = Circle(radius=1, color=orange2_color, fill_opacity=1)
+        point3 = Circle(radius=1, color=blue_color, fill_opacity=1)
         
         self.play(
             Create(point1.shift(2.2*UP)), 
