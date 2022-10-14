@@ -24,10 +24,6 @@ class Decrement(Scene):
 
         minus1 = Line((0,0,0),(2,0,0), stroke_width = 20, color = sharp_color)
         minus2 = Line((-1,0,0),(1,0,0), stroke_width = 20, color = sharp_color)
-        # line2 = Line((0,-1,0),(0,1,0), stroke_width = 20, color = sharp_color)
         self.play(Transform(decreText, minus1), run_time=speed)
         self.play(Transform(mentText, minus2.next_to(minus1)), run_time=speed)
         self.wait(1)
-        # line1.generate_target()
-        # line1.target.move_to(LEFT)
-        # self.play(MoveToTarget(line1), run_time=speed)
