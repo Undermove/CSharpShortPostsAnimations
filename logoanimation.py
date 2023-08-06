@@ -2,7 +2,8 @@ from manim import *
 
 class Testing(Scene):
     def construct(self):
-        speed = 0.6
+        self.camera.background_color = "#FFFFFF00"
+        speed = 0.27
         c_color = '#F78D3F'
         sharp_color = '#ffffff'
 

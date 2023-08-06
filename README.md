@@ -5,8 +5,8 @@
 ## Для запуска
 1. [Установить Python 3](https://www.python.org/downloads/)
 2. Установить MANIM командой ```pip3 install manim```
-3. В корне проекта вызвать команду ```manim -pql -r 1080,1080 -fps 60 stickerpack/fuck.py Fuck```
-4. Результат будет лежать в папке media/fuck/1080p60/Fuck.mp4
+3. В корне проекта вызвать команду ```manim -r 512,512 --format=webm -t fuck.py```
+4. Результат будет лежать в папке media/fuck/1080p60/Fuck.webm
 
 Опечатка в названии папки stickerpack сделана специально, но без особого повода. Если хотите исправить, можете сделать PR.
 
