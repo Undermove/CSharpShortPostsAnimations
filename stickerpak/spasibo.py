@@ -22,4 +22,4 @@ class Spasibo(Scene):
         Transform(point2, text_spasibo.next_to(text_async).shift(0.1*UP)), 
         Transform(point3, text_parentheses.next_to(text_spasibo).shift(0.1*UP)),
         run_time=speed)
-        self.wait(2)
+        self.wait(1.5)
