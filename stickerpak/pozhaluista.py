@@ -18,14 +18,14 @@ class Pozhaluista(Scene):
             run_time=speed)
         self.wait(0.5)
 
-        text_leftbrace = MarkupText(f'<span color=\"{blue_color}\" size=\"large\">{{</span>')
-        text_await = MarkupText(f'<span color=\"{blue_color}\" size=\"large\">await</span>')
-        text_pozhaluista = MarkupText(f'<span color=\"{orange_color}\" size=\"large\">Pozhaluista();</span>')
-        text_parentheses = MarkupText(f'<span color=\"{blue_color}\" size=\"large\">}}</span>')
+        text_leftbrace = MarkupText(f'<span color=\"{blue_color}\" size=\"25pt\">{{</span>')
+        text_await = MarkupText(f'<span color=\"{blue_color}\" size=\"22pt\">await</span>')
+        text_pozhaluista = MarkupText(f'<span color=\"{orange_color}\" size=\"22pt\">Pozhaluista();</span>')
+        text_parentheses = MarkupText(f'<span color=\"{blue_color}\" size=\"25pt\">}}</span>')
         self.play(
-            Transform(point1, text_leftbrace.shift(1*UP).shift(3*LEFT)),
-            Transform(point2, text_await.next_to(text_leftbrace, direction=DOWN).shift(2*RIGHT)), 
-            Create(text_pozhaluista.next_to(text_await).shift(0.05*DOWN)), 
-            Transform(point3, text_parentheses.next_to(text_await, direction=DOWN).shift(2*LEFT)),
+            Transform(point1, text_leftbrace.shift(1*UP).shift(6.5*LEFT)),
+            Transform(point2, text_await.next_to(text_leftbrace, direction=DOWN).shift(3*RIGHT)), 
+            Create(text_pozhaluista.next_to(text_await).shift(0.14*DOWN)), 
+            Transform(point3, text_parentheses.next_to(text_await, direction=DOWN).shift(3*LEFT)),
             run_time=speed)
-        self.wait(2)
+        self.wait(1.5)
