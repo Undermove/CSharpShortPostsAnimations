@@ -15,10 +15,10 @@ class Spasibo(Scene):
         self.play(Create(point1.shift(2.2*LEFT)), Create(point2.next_to(point1)), Create(point3.next_to(point2)), run_time=speed)
         self.wait(0.5)
 
-        text_async = MarkupText(f'<span color=\"{blue_color}\" size=\"x-large\">async</span>')
-        text_spasibo = MarkupText(f'<span color=\"{orange_color}\" size=\"x-large\">Spasibo</span>')
-        text_parentheses = MarkupText(f'<span color=\"{orange2_color}\" size=\"x-large\">()</span>')
-        self.play(Transform(point1, text_async.shift(2.4*LEFT)),
+        text_async = MarkupText(f'<span color=\"{blue_color}\" size=\"34pt\">async</span>')
+        text_spasibo = MarkupText(f'<span color=\"{orange_color}\" size=\"34pt\">Spasibo</span>')
+        text_parentheses = MarkupText(f'<span color=\"{orange2_color}\" size=\"34pt\">()</span>')
+        self.play(Transform(point1, text_async.shift(4.4*LEFT)),
         Transform(point2, text_spasibo.next_to(text_async).shift(0.1*UP)), 
         Transform(point3, text_parentheses.next_to(text_spasibo).shift(0.1*UP)),
         run_time=speed)
