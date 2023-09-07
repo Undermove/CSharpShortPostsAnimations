@@ -3,7 +3,7 @@ from manim import *
 class LyutoPlusuyu(Scene):
     def construct(self):
         self.camera.background_color = "#FFFFFF00"
-        speed = 0.3
+        speed = 0.2
         c_color = '#BBFF33'
         sharp_color = '#00FF00'
 
@@ -34,4 +34,4 @@ class LyutoPlusuyu(Scene):
     
         text2 = MarkupText(f'<span color=\"{sharp_color}\" style=\"italic\" size=\"25pt\">ЛЮТО ПЛЮСУЮ!</span>')
         self.play(Create(text2.next_to(line4, direction=7*DOWN).shift(2.2*LEFT)), run_time=speed)
-        self.wait(1)
+        self.wait(0.5)
